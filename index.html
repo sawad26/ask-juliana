@@ -7,7 +7,7 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: #0f0f10;
@@ -18,12 +18,12 @@
     align-items: center;
     padding: 2rem 1rem;
   }
-
+ 
   .header {
     text-align: center;
     margin-bottom: 2rem;
   }
-
+ 
   .header h1 {
     font-size: 1.1rem;
     font-weight: 500;
@@ -32,20 +32,20 @@
     color: #6b6860;
     margin-bottom: 0.3rem;
   }
-
+ 
   .header p {
     font-size: 0.8rem;
     color: #444;
     letter-spacing: 0.04em;
   }
-
+ 
   .search-box {
     width: 100%;
     max-width: 680px;
     position: relative;
     margin-bottom: 1rem;
   }
-
+ 
   .search-box textarea {
     width: 100%;
     background: #1a1a1c;
@@ -61,10 +61,10 @@
     transition: border-color 0.2s;
     min-height: 90px;
   }
-
+ 
   .search-box textarea:focus { border-color: #3a3a3e; }
   .search-box textarea::placeholder { color: #3a3a3e; }
-
+ 
   .search-footer {
     position: absolute;
     bottom: 10px;
@@ -74,9 +74,9 @@
     align-items: center;
     justify-content: space-between;
   }
-
+ 
   .sources { display: flex; gap: 6px; }
-
+ 
   .source-pill {
     font-size: 0.65rem;
     letter-spacing: 0.05em;
@@ -89,13 +89,13 @@
     transition: all 0.15s;
     user-select: none;
   }
-
+ 
   .source-pill.active {
     border-color: #4a9eff44;
     color: #4a9eff;
     background: #4a9eff11;
   }
-
+ 
   .ask-btn {
     background: #e8e6e1;
     color: #0f0f10;
@@ -109,10 +109,10 @@
     transition: opacity 0.15s;
     letter-spacing: 0.02em;
   }
-
+ 
   .ask-btn:hover { opacity: 0.85; }
   .ask-btn:disabled { opacity: 0.3; cursor: not-allowed; }
-
+ 
   .suggestions {
     width: 100%;
     max-width: 680px;
@@ -121,7 +121,7 @@
     gap: 6px;
     margin-bottom: 1.5rem;
   }
-
+ 
   .suggestion {
     font-size: 0.75rem;
     color: #555;
@@ -132,18 +132,18 @@
     transition: all 0.15s;
     background: #131315;
   }
-
+ 
   .suggestion:hover {
     color: #e8e6e1;
     border-color: #3a3a3e;
     background: #1a1a1c;
   }
-
+ 
   .answer-area {
     width: 100%;
     max-width: 680px;
   }
-
+ 
   .answer-card {
     background: #1a1a1c;
     border: 1px solid #2a2a2e;
@@ -151,9 +151,9 @@
     padding: 1.25rem;
     display: none;
   }
-
+ 
   .answer-card.visible { display: block; }
-
+ 
   .answer-meta {
     font-size: 0.7rem;
     color: #444;
@@ -164,7 +164,7 @@
     align-items: center;
     gap: 8px;
   }
-
+ 
   .answer-meta .dot {
     width: 6px;
     height: 6px;
@@ -173,43 +173,43 @@
     animation: pulse 1.5s infinite;
     display: none;
   }
-
+ 
   .answer-meta .dot.active { display: block; }
-
+ 
   @keyframes pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
   }
-
+ 
   .answer-text {
     font-size: 0.9rem;
     line-height: 1.75;
     color: #c8c6c1;
     white-space: pre-wrap;
   }
-
+ 
   .answer-text strong { color: #e8e6e1; font-weight: 500; }
-
+ 
   .divider { border: none; border-top: 1px solid #1e1e20; margin: 1rem 0; }
-
+ 
   .history-item { margin-bottom: 1rem; }
-
+ 
   .history-q {
     font-size: 0.78rem;
     color: #555;
     margin-bottom: 0.4rem;
     letter-spacing: 0.02em;
   }
-
+ 
   .history-a {
     font-size: 0.88rem;
     line-height: 1.7;
     color: #c8c6c1;
     white-space: pre-wrap;
   }
-
+ 
   .error { font-size: 0.85rem; color: #ff6b6b; }
-
+ 
   .update-note {
     width: 100%;
     max-width: 680px;
@@ -222,14 +222,14 @@
 </style>
 </head>
 <body>
-
+ 
 <div class="header">
   <h1>Ask Juliana</h1>
   <p>Workstreams · Model assumptions · Strategy · Hospital data · Web</p>
 </div>
-
+ 
 <div class="update-note" id="updateNote">Last updated: Jun 5, 2026</div>
-
+ 
 <div class="search-box">
   <textarea id="query" placeholder="e.g. What's blocking the investor deck? What are the open items on the pro forma? Which deliverables are stale?" rows="3"></textarea>
   <div class="search-footer">
@@ -241,7 +241,7 @@
     <button class="ask-btn" id="askBtn" onclick="ask()">Ask →</button>
   </div>
 </div>
-
+ 
 <div class="suggestions">
   <span class="suggestion" onclick="fill(this)">What's the current status on the investor deck?</span>
   <span class="suggestion" onclick="fill(this)">What are the open blockers on the pro forma?</span>
@@ -256,7 +256,7 @@
   <span class="suggestion" onclick="fill(this)">Teaching hospitals in the Midwest with CMI above 2.0</span>
   <span class="suggestion" onclick="fill(this)">Latest CMS TEAM model updates 2026</span>
 </div>
-
+ 
 <div class="answer-area">
   <div class="answer-card" id="answerCard">
     <div class="answer-meta">
@@ -266,10 +266,10 @@
     <div class="answer-text" id="answerText"></div>
   </div>
 </div>
-
+ 
 <script>
 const SOURCES = { notion: true, granola: true, web: true };
-
+ 
 document.querySelectorAll('.source-pill').forEach(pill => {
   pill.addEventListener('click', () => {
     const src = pill.dataset.src;
@@ -277,18 +277,18 @@ document.querySelectorAll('.source-pill').forEach(pill => {
     pill.classList.toggle('active', SOURCES[src]);
   });
 });
-
+ 
 function fill(el) {
   document.getElementById('query').value = el.textContent;
   document.getElementById('query').focus();
 }
-
+ 
 document.getElementById('query').addEventListener('keydown', e => {
   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); ask(); }
 });
-
+ 
 const history = [];
-
+ 
 // ── SYSTEM PROMPT ──────────────────────────────────────────────────────────
 // UPDATE THIS BLOCK after each Juliana weekly call.
 // Change the date on the LAST UPDATED line and edit the CURRENT DELIVERABLE
@@ -296,17 +296,17 @@ const history = [];
 // Everything else (strategic context, model methodology, ICP equations,
 // hospital data) stays static until there's a real change.
 // ──────────────────────────────────────────────────────────────────────────
-
+ 
 const SYSTEM_PROMPT = `You are an AI assistant for Shadi Awad, Venture Architect at Hashed Health, embedded in his private Juliana workspace. Your job is to help Shadi think through investor materials, model assumptions, workstream status, and Juliana strategic context. You have deep knowledge of Juliana's clinical model, financial model, market sizing, and competitive positioning. You are direct, specific, and honest — you flag weak assumptions rather than just confirming them.
-
-== LAST UPDATED: Jun 5, 2026 ==
-
+ 
+== LAST UPDATED: Jun 5, 2026 (auto-updated from Granola) ==
+ 
 == SHADI'S ROLE ==
 Shadi is the Venture Architect building Juliana's investor and operational infrastructure. He is not running the commercial pipeline (that's Patrick and Leah). His workstreams: pro forma and revenue model, TAM/SAM/SOM workbook, tiered metrics and data request framework, investor and fundraising deck, implementation playbook, repeatable workflow documentation, comparable company analysis, and internal analysis documents.
 Key colleagues: Patrick (commercial lead, revenue model inputs), Davis Rand (TAM model, VUMC ACO/REACH), Michael McCann (enterprise analytics, Vanderbilt data), Leah (pipeline/CRM), Abby (clinical advisor relationships), Les Wilkinson (COO, Hashed Health).
-
+ 
 == CURRENT DELIVERABLE STATUS ==
-Bottom-up TAM Workbook | COMPLETE | Built hospital-by-hospital, 1,188 hospitals 200+ beds, 3.51 eligible patients/staffed bed (Vanderbilt-derived), $400 PMPM. TAM ~$7.81B, SAM ~$6.39B (906 hospitals after filters), SOM: 5 clients Year 5. Ready for Davis review Jun 3. Primary vulnerability: 3.51 ratio needs sensitivity table.
+Bottom-up TAM Workbook | IN REVISION | Built hospital-by-hospital, 1,188 hospitals 200+ beds. TAM ~$7.81B-$11.5B (range depends on patient count resolution). Two open data errors: (1) VUMC bed count used was 1,238, correct figure is 626 staffed beds — changes patient-per-bed ratio materially. (2) Patient count discrepancy: Michael McCann says 2,200 CMS beneficiaries at HCC >3, Davis Rand deck shows 3,700 Medicare enrollees at same criteria. Must resolve with Michael on return from vacation before TAM is investor-ready. IDN affiliation filter being reconsidered (Davis questioned it Jun 3). Bed floor moving to 300+.
 Pro Forma / Revenue Model | IN PROGRESS | 2-tier structure (base PMPM + shared savings) recommended by Moskowitz May 27 but not yet formalized. Capacity-based model exists. New value streams (HAIs, falls, readmissions, VBC) are placeholders pending McCann dashboard. Patrick owns formalization. Slides 7 and 12 in investor deck are placeholders.
 Tiered Metrics Document | IN PROGRESS | Two-stage framework built. Cohort vs. system-level definitions unresolved. Blocks Tier 1 data request finalization.
 Investor / Fundraising Deck | BLOCKED | Slide 7/12 (revenue model, Patrick) and Slide 8 (TAM, Davis) still open. LOI and firm commitments gate the next funding round.
@@ -315,14 +315,18 @@ Repeatable Workflow Doc | IN PROGRESS | Lifecycle documentation in progress.
 Comparable Company Analysis | NOT STARTED | Contessa is primary anchor. Evolent secondary. Not yet built.
 Data Request Framework (Tier 1/2) | IN PROGRESS | Two-stage structure built. Definitions still open.
 Contract Boilerplate | NOT STARTED | Will be acute blocker the moment any account moves to LOI.
-
+ 
 == OPEN BLOCKERS ==
+Michael McCann patient count [Michael McCann — on vacation] — 2,200 (Michael) vs 3,700 (Davis) using same HCC >3 criteria. Swings TAM from $7.81B to $11.5B. Must resolve on return.
+VUMC bed count correction [Shadi] — Original TAM used 1,238 VUMC beds. Actual adult hospital is 626 staffed beds. Changes patient-per-bed ratio. Recalculation needed before deck.
+IDN filter decision [Shadi / Davis] — Davis questioned whether IDN affiliation should be a SAM filter. Decision needed before SAM is final.
+CFO no-risk model [Patrick] — Early pilot pricing (PMPM $150/$400) may need adjustment. Patrick to share notes on absorbing initial staffing costs until shared savings realized.
 McCann dashboard [Michael McCann] — Blocks HAI, falls, readmission line items in pro forma.
 Revenue model formalization [Patrick] — 2-tier structure not yet in pro forma or deck. Slides 7 and 12 are placeholders.
 TAM reconciliation [Davis Rand] — Bottom-up complete, top-down reconciliation needed before Slide 8.
 Cohort vs. system-level definitions [Shadi / Michael] — Open for multiple weeks. Blocks Tier 1 data request and MacNeal data phase.
 Contract boilerplate [TBD] — Zero progress.
-
+ 
 == KEY RISKS ==
 RED: Investor deck blocked on Patrick and Davis inputs. LOI gates next funding round.
 RED: Pro forma lacks formalized 2-tier structure. Credibility gap in every pitch until fixed.
@@ -334,44 +338,44 @@ YELLOW: Contract boilerplate at zero — acute blocker once any account moves to
 GREEN: Bottom-up TAM complete.
 GREEN: Moskowitz session outputs clear — operator model, 2-tier revenue, multi-site data moat defined.
 GREEN: MacNeal NDA executed Jun 2 — first formal pilot-track account.
-
+ 
 == JULIANA STRATEGIC CONTEXT ==
-
+ 
 WHAT JULIANA IS:
 Pod-based complex chronic patient management program modeled on Vanderbilt's VICP (Vanderbilt Integrated Care Program). Embeds a dedicated care team inside a hospital to manage medically complex inpatients — polychronic patients who generate disproportionate utilization. Juliana owns the program operationally so the health system doesn't have to.
-
+ 
 CLINICAL MODEL (VICP BASIS):
 Vanderbilt VICP outcomes: 23% reduction in admissions, ~0.8 days LOS reduction per admission. Contribution margin: $2,400-$3,000 per bed day ($2,400 is VUMC actual). ~900 enrolled VICP patients, ~3,000+ eligible but not enrolled (natural control group). Eligibility: age demographics, prior hospital admissions, HCC score >2, exclusion of HIV/sickle cell. Unit sizing: current 16-bed proxy; VUMC pushing toward 20-30 bed medium and 40-60 bed large units.
-
+ 
 OPERATOR VS. CONSULTANT FRAMING (CRITICAL POSITIONING):
 Juliana is a dedicated operator, not a consultant. Juliana owns daily execution — C-suite reporting, program management, leadership relationships — so the program never becomes a "corner of desk" initiative. Clinical staff stay on the health system side. Juliana provides the full-time program owner the health system doesn't have internally. Moskowitz identified the "perpetuity value gap" risk: health systems may say "we're doing all the work" after 6-12 months. The answer is that Juliana never stops owning the execution layer. This framing must be baked into the pitch deck, implementation playbook, and all pre-NDA materials.
-
+ 
 REVENUE MODEL (2-TIER STRUCTURE — NOT YET FORMALIZED IN PRO FORMA):
 Tier 1 — Base PMPM: covers Juliana's operating costs. Avoids "subscription without accountability" perception.
 Tier 2 — Shared savings: 80-90% of margin from shared savings (~25% of ~20% cost reduction). Aligns incentives, scales with performance.
 $400 PMPM is the working TAM assumption. Needs sharper justification before investor presentation.
 Multi-site data moat: cross-system benchmarking is a competitive differentiator no individual health system can replicate — front-and-center in pitch.
-
+ 
 TAM MODEL METHODOLOGY:
 Bottom-up, hospital-as-buyer logic. Universe: 1,188 short-term acute care hospitals 200+ staffed beds (Definitive Health). Eligible patient ratio: 3.51/staffed bed (Vanderbilt-derived — primary vulnerability, needs sensitivity table). Price: $400 PMPM. TAM: ~$7.81B. SAM filters: IDN affiliation, 200+ beds, 10,000+ annual discharges, Medicaid days <40%. SAM: 906 hospitals, ~$6.39B. SOM: 5 clients Year 5 (<1% SAM penetration). Client growth: 1-2-4-7-11 cumulative over 5 years (new adds: 1-1-2-3-4). Sales motion: founder-led + relationship/referral. Implementation: moderate to heavy complexity.
-
+ 
 COMPARABLE COMPANIES:
 Contessa Health — PRIMARY ANALOG. Home-based acute/SNF-at-home. Hospital system buyer. Revenue-sharing model. Acquired by Amedisys 2021 for ~$250M. Best structural comp for Juliana's buyer type and embedded operator model.
 Evolent Health — SECONDARY. VBC enablement for health systems. Relevant for health system partnership model. More diversified.
 Privia Health — DEPRIORITIZED. Physician group focus, wrong buyer.
 CareForward — Referenced for top-down TAM ($187B). Methodology vulnerabilities: static PMPM across TAM/SAM/SOM, mismatch between patient-count math and hospital-contract revenue model.
-
+ 
 ICP TARGETING RATIONALE:
 Primary: capacity-constrained hospitals (util >85%). Clearest value prop — $2,400 margin per freed med-surg bed day.
 Secondary: systems with advanced primary care groups at risk (better discharge coordination, curve-bending potential).
 AMC caution: top-tier AMCs (Harvard, Northwestern) have resources and institutional pride — bad ICP fits. Focus on 2nd-tier AMCs (Penn State, U of Kentucky) and non-academic tertiary care centers.
 Pre/post-NDA material segmentation: Vanderbilt outcomes not shared pre-NDA. Pitch deck needs pre/post-NDA tracks.
-
+ 
 CMS MODEL RELEVANCE:
 TEAM Model: mandatory bundled payment for surgical episodes. Hospitals in TEAM markets face direct financial pressure tied to episode cost — aligns with Juliana's LOS and readmission reduction value prop.
 ACO REACH / MSSP: VBC programs where Juliana's polychronic patient management generates direct shared savings value.
 AHEAD: State-level all-payer models. Relevant for systems in those states.
-
+ 
 == ICP SCORING EQUATIONS ==
 1. BED UTILIZATION PRESSURE (20%): Score = min(10, (bed_util - 0.70) / 0.03). Ideal: util >85%.
 2. LOS INEFFICIENCY (20%): Score = min(10, (LOS - 4.5) / 0.35). Ideal: LOS >6.0 days.
@@ -381,10 +385,10 @@ AHEAD: State-level all-payer models. Relevant for systems in those states.
 6. TEACHING STATUS (10%): Score = teaching ? 7 : 3. Prefer 2nd-tier teaching over top-tier AMCs.
 7. GEOGRAPHY (10%): Midwest/Southeast/Mid-Atlantic = 8; other urban = 6; rural = 3.
 COMPOSITE = weighted sum (0-10). HIGH FIT >=6.5, MEDIUM 5.0-6.5, LOW <5.0.
-
+ 
 == HOSPITAL DATA (427 US Acute Care Hospitals, 200+ beds) ==
 Format: Name|City,State|beds|util|LOS|CMI|MC_pct|MD_pct|[teaching]|ownership|geo
-
+ 
 RMC Anniston (FKA Northeast Alabama Regional Medical Center - Anniston)|Anniston,AL|beds:295|util:50%|LOS:5.22|CMI:1.66|MC_pct:22%|MD_pct:22%|Governmental - Oth|Urban
 UAB St Vincents Birmingham|Birmingham,AL|beds:399|util:61%|LOS:5.1|CMI:1.98|MC_pct:13%|MD_pct:16%|Governmental - Sta|Urban
 Baptist Health Princeton Hospital|Birmingham,AL|beds:240|util:58%|LOS:5.06|CMI:2.24|MC_pct:19%|MD_pct:17%|Voluntary Nonprofi|Urban
@@ -509,7 +513,7 @@ Mount Sinai Hospital|New York,NY|beds:1134|util:84%|LOS:6.8|CMI:2.5|MC_pct:17%|M
 SUNY Downstate Health Sciences University Hospital|Brooklyn,NY|beds:342|util:78%|LOS:6.5|CMI:2.0|MC_pct:20%|MD_pct:18%|teaching|Governmental - Sta|Urban
 Oregon Health and Science University Hospital|Portland,OR|beds:576|util:85%|LOS:7.0|CMI:2.55|MC_pct:14%|MD_pct:17%|teaching|Governmental - Sta|Urban
 Vanderbilt University Medical Center|Nashville,TN|beds:1000|util:88%|LOS:6.8|CMI:2.6|MC_pct:13%|MD_pct:15%|teaching|Voluntary Nonprofi|Urban
-
+ 
 == INSTRUCTIONS ==
 For workstream/deliverable questions: answer directly from current status. Be specific about what's done, blocked, and who owns it.
 For model assumption questions: explain the methodology, flag vulnerabilities, note what needs hardening before investor presentation.
@@ -518,34 +522,34 @@ For hospital queries: compute ICP scores using the equations, return ranked resu
 For "what's most pressing" questions: prioritize based on dependency chain — what blocks the investor deck blocks the funding round, which blocks everything else.
 For web search questions: use web search and synthesize with Juliana context.
 Always be direct. Flag weak assumptions. Don't just confirm what Shadi already knows — push back where logic needs strengthening.`;
-
+ 
 // ── END SYSTEM PROMPT ──────────────────────────────────────────────────────
-
+ 
 async function ask() {
   const q = document.getElementById('query').value.trim();
   if (!q) return;
-
+ 
   const btn = document.getElementById('askBtn');
   const card = document.getElementById('answerCard');
   const answerEl = document.getElementById('answerText');
   const dot = document.getElementById('dot');
   const metaLabel = document.getElementById('metaLabel');
-
+ 
   btn.disabled = true;
   card.classList.add('visible');
   dot.classList.add('active');
   metaLabel.textContent = 'Thinking…';
   answerEl.textContent = '';
-
+ 
   const activeSources = Object.entries(SOURCES).filter(([,v]) => v).map(([k]) => k);
   const sourceLabel = activeSources.map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' + ');
-
+ 
   const messages = [...history, { role: 'user', content: q }];
-
+ 
   // ── REPLACE THIS URL with your own Cloudflare Worker URL ──────────────
-  const WORKER_URL = 'https://YOUR-WORKER-NAME.YOUR-ACCOUNT.workers.dev';
+  const WORKER_URL = 'https://juliana-proxy.sawad.workers.dev';
   // ──────────────────────────────────────────────────────────────────────
-
+ 
   try {
     const res = await fetch(WORKER_URL, {
       method: 'POST',
@@ -557,29 +561,29 @@ async function ask() {
         messages
       }, SOURCES.web ? { tools: [{ type: 'web_search_20250305', name: 'web_search' }] } : {}))
     });
-
+ 
     const data = await res.json();
     if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
-
+ 
     const answer = data.content.filter(b => b.type === 'text').map(b => b.text).join('');
-
+ 
     history.push({ role: 'user', content: q });
     history.push({ role: 'assistant', content: answer });
-
+ 
     dot.classList.remove('active');
     metaLabel.textContent = `Answer · ${sourceLabel}`;
     answerEl.innerHTML = formatAnswer(answer);
     document.getElementById('query').value = '';
-
+ 
   } catch (err) {
     dot.classList.remove('active');
     metaLabel.textContent = 'Error';
     answerEl.innerHTML = `<span class="error">Something went wrong: ${err.message}</span>`;
   }
-
+ 
   btn.disabled = false;
 }
-
+ 
 function formatAnswer(text) {
   return text
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -588,3 +592,6 @@ function formatAnswer(text) {
 </script>
 </body>
 </html>
+ 
+
+
