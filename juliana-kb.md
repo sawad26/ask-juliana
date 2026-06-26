@@ -78,7 +78,7 @@ Bottom-up TAM (revised June 25, 2026):
 - Shared savings TAM: approximately $7B across ~1,000 qualifying facilities
 ## BD Pipeline (as of June 26, 2026)
  
-**MacNeal (Trinity Health, Berwyn IL)** — Active pilot design. Contact: Chuck Bareis MD (President/CMO). NDA executed. Next meeting July 28 with Chuck and CNO Jen. Lead angle: behavioral health patients with medical complexity. Critical open question: is the MacNeal psych unit pure inpatient psych (IPFPS) or med-psych? Pure psych = non-starter. Patrick confirming within one week. Four value streams: (1) BH with medical complexity, (2) substance use with dual diagnoses, (3) frequent utilizers/readmitted, (4) ACO-attributed Medicare. Approximately 150 patients each, 600 total.
+**MacNeal (Trinity Health, Berwyn IL)** — Active pilot design. Contact: Chuck Bareis MD (President/CMO). NDA executed. Next meeting July 28 with Chuck and CNO Jen. BH unit type CONFIRMED June 26: large standalone psychiatry service — pure inpatient psych, not med-psych. MacNeal 2.0 thesis (Patrick, June 26): anchor around a dedicated Juliana unit or designated cohort; use initial design work to determine right clinical configuration — true med-psych capability, designated MedSurg complex-care pod with BH integration, or another model. Goal is to help MacNeal develop a more deliberate med-psych capability and high-friction patient operating model across ED, medicine, BH, discharge, and post-discharge transitions. Value streams: LOS, readmissions, ED recidivism, discharge reliability, total cost of care, and relieving medical-clearance and co-management barriers limiting flow into existing BH units.
  
 **Franciscan Alliance** — Strong fit confirmed. Global risk contract with Anthem (~800 high-risk patients). Sees Juliana as the missing inpatient layer. NDA in progress with Michael Hart. Executive meeting targeted mid-to-end July.
  
@@ -100,7 +100,7 @@ Bottom-up TAM (revised June 25, 2026):
 ## Open Blockers
  
 - Tiered PMPM not yet pressure-tested with full team — no commercial language locked until this resolves
-- MacNeal behavioral health unit type unconfirmed — Patrick confirming within one week
+- MacNeal BH unit confirmed as pure psych — clinical configuration for MacNeal 2.0 TBD ahead of July 28 meeting
 - TAM numerator: Michael eligible patient count reconciliation (2,200 vs 3,700 vs 4,333) still unresolved
 - Vanderbilt contract not yet drafted
 - Data feed design session not yet scheduled
