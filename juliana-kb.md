@@ -1,43 +1,55 @@
 # Juliana Knowledge Base
-*Last updated: June 26, 2026*
+*Last updated: Jul 20, 2026*
+ 
+---
  
 ## What Is Juliana
  
-Juliana is an embedded care delivery model that deploys a multidisciplinary pod inside hospitals to manage polychronic, high-utilizer inpatients. Built on VICP (Vanderbilt Interdisciplinary Care Program). Not a SaaS product. B2B clinical operating model sold as a service to health systems.
+Juliana is an embedded care delivery model that deploys a multidisciplinary pod inside hospitals to manage polychronic, high-utilizer inpatients. Built on the VICP (Vanderbilt Interdisciplinary Care Program). Not a SaaS product — it is a B2B clinical operating model sold as a service to health systems.
  
 Positioning: partner, not vendor. The pod operates inside the hospital but is directed by Juliana. The health system provides the unit; Juliana provides the operating model, the operator, and the governance structure.
  
+---
+ 
 ## The Clinical Model
  
-The pod is deployed inside a hospital on a dedicated unit. All roles are non-negotiable on Day 1.
+The pod is deployed inside a hospital on a dedicated unit. All roles are non-negotiable at Day 1.
  
-Pod composition (from VICP SOP):
-- Two providers daily (2 MDs or MD + APP)
-- Inpatient social worker
-- Outpatient social worker
-- Nurse program manager
-- Clinic LPN
-- PharmD
-- Nurse case manager
-- One Juliana-employed implementation manager per site from Day 1
-Operating structure:
+**Juliana standard pod (Michael-approved):**
+- Physician (one designated as local site medical director with administrative responsibilities)
+- Advanced practice provider (NP or PA)
+- Pharmacist
+- Behavioral health / psych (PMH-APRN)
+- Registered nurses (RNs)
+- Charge nurse
+- Social worker
+- Case manager
+- Clinical Implementation Director (Juliana-employed)
+- Program Manager (Juliana-employed)
+Note: The VICP pod at Vanderbilt (inpatient SW, outpatient SW, nurse program manager, clinic LPN, PharmD, nurse case manager) is the proof-of-concept model. The Juliana standard pod above is the generalized deployment structure for new sites. Role mix at any given site may vary; this list is the canonical starting point.
+ 
+**Operating structure:**
 - Shared workroom on patient unit (Command Center)
 - Near 100% bedside rounds
 - Daily discharge huddle
-- A team: 10-12 patients, handles admissions
-- B team: 6-8 patients, afternoon clinic
+- A team: 10–12 patients, handles admissions
+- B team: 6–8 patients, afternoon clinic
 - Night float covers after 7pm; nocturnist follows care plan; 7am huddle handoff
+---
+ 
 ## Patient Cohort
  
 Standard cohort criteria (starting point, not a mandate — health systems can modify):
-- HCC 2-2.999 + 2 or more unscheduled admissions per year, OR
+- HCC 2–2.999 + 2 or more unscheduled admissions per year, OR
 - HCC 3+ + 1 or more unscheduled admission per year
 - Minimum 60 patients at go-live
-For MacNeal specifically: 3+ chronic medical conditions paired with utilization history at MacNeal.
- 
 ED frequent utilizers: include only if they have an admission history. 30 ED visits with zero admissions = exclude.
  
 Exclusion criteria are site-specific. The VICP exclusion list is Vanderbilt-infrastructure-specific and does not automatically apply elsewhere. Behavioral health diagnoses including schizophrenia and substance abuse are NOT categorically excluded. Evaluate specialty service coverage at each new site before applying any exclusions.
+ 
+Two enrollment pathways: monthly team referral review + proactive SW screening of admitted patients.
+ 
+---
  
 ## Proven Outcomes (VICP)
  
@@ -52,62 +64,95 @@ Early dashboard results (118-patient sample, Cornelius score 27+, highest-risk c
 - Annual admissions down 31%
 - Total cost of care down 30%
 - Cost reduction per patient: approximately $28,960 per year
-Target sample size before using externally: approximately 1,000 patients.
+Jul 7 update: 0.8-day decrease in LOS; readmission reduction now claimable for the first time; MA-only cohort ~40% decrease in readmissions; all CMS payers still show a readmission reduction. Dashboard enhancement to enterprise analytics — estimated delivery Aug 1.
  
-## Pricing Model
+Target sample size before using data externally: approximately 1,000 patients.
  
-The flat $450 PMPM model is off the table. Current working model is tiered based on how much clinical staff the hospital provides versus Juliana.
+---
  
-- Hospital provides all clinical staff → lower PMPM (approximately $25-35)
-- Juliana provides more staff → higher PMPM (approximately $150 active / $75 inactive)
-- Implementation manager cost is absorbed by Juliana internally, not passed to the client
-- Early pilots (e.g. MacNeal) may lead with zero or minimal PMPM, monetizing via shared savings only
-- Franciscan-type partners likely willing to pay PMPM from day one given global risk contracts
-Shared savings: 25% to Juliana, 75% to health system, based on validated cost reductions.
+## Pricing Model (Current Working Version)
  
-Note: this pricing structure is not yet formally locked. No commercial language is finalized until the full team pressure-tests the tiered model.
+The flat $450 PMPM and the old $150/$400 enrolled/active split are both off the table. The current working model uses three staffing tiers based on how much clinical staff the hospital provides versus Juliana.
+ 
+- **Tier 1:** Juliana provides Clinical Implementation Director and Program Manager only (lightest, MacNeal approach)
+- **Tier 2:** Adds pharmacist, social worker, and case manager
+- **Tier 3:** Juliana provides all staff (not a lead offer)
+Cost basis: Davis's workbook using Vanderbilt midpoint salaries + 30% benefits load. PMPM = fully loaded team cost at tier + ~10% buffer. Margin-neutral year one; upside comes from higher shared savings take on the back end.
+ 
+Active PMPM trigger: first Juliana provider clinical note. Status persists once care plan is built, regardless of readmission gap. Proration logic for mid-month activation is open.
+ 
+**Site-specific approaches:**
+- MacNeal: defer fees until shared savings realized (one flat PMPM, no enrolled/active split)
+- Franciscan-type: charge from day one with 90-day ramp
+Contessa JV framing flagged as longer-term model: PMPM must include enough Juliana margin independently, not just JV margin.
+ 
+Tier 1 model for MacNeal needs to be ready before Jul 28. Davis to refactor full enterprise model over 1–2 weeks.
+ 
+---
  
 ## Market Size
  
-Top-down TAM: approximately $10.2B ($400 PMPM x 12 x ~2.13M eligible patients across 688 qualifying US acute care hospitals with 300+ staffed beds).
+Top-down TAM: approximately $10.2B ($400 PMPM × 12 × ~2.13M eligible patients across 688 qualifying US acute care hospitals with 300+ staffed beds).
  
-Bottom-up TAM (revised June 25, 2026):
+Bottom-up TAM (revised methodology):
+- Customer unit = hospital
 - 1,000-patient cohort per deployment; 1 cohort per 300 staffed beds
-- Hospital brings own clinical FTEs; Juliana supplies 2 embedded FTEs
-- Shared savings layer: approximately $7.2M per facility per year ($30K cost reduction x 1,000 patients x 25% Juliana share)
+- Hospital brings own clinical FTEs; Juliana supplies 2 embedded FTEs (Clinical Implementation Director + Program Manager)
+- PMPM = annualized cost of those 2 FTEs ÷ 1,000 patients
+- Shared savings layer: approximately $7.2M per facility per year ($30K cost reduction × 1,000 patients × 25% Juliana share)
 - Shared savings TAM: approximately $7B across ~1,000 qualifying facilities
-## BD Pipeline (as of June 26, 2026)
+Note: shared savings figures are based on a 120-patient sample — directional, not yet statistically robust.
  
-**MacNeal (Trinity Health, Berwyn IL)** — Active pilot design. Contact: Chuck Bareis MD (President/CMO). NDA executed. Next meeting July 28 with Chuck and CNO Jen. BH unit type CONFIRMED June 26: large standalone psychiatry service — pure inpatient psych, not med-psych. MacNeal 2.0 thesis (Patrick, June 26): anchor around a dedicated Juliana unit or designated cohort; use initial design work to determine right clinical configuration — true med-psych capability, designated MedSurg complex-care pod with BH integration, or another model. Goal is to help MacNeal develop a more deliberate med-psych capability and high-friction patient operating model across ED, medicine, BH, discharge, and post-discharge transitions. Value streams: LOS, readmissions, ED recidivism, discharge reliability, total cost of care, and relieving medical-clearance and co-management barriers limiting flow into existing BH units.
+---
  
-**Franciscan Alliance** — Strong fit confirmed. Global risk contract with Anthem (~800 high-risk patients). Sees Juliana as the missing inpatient layer. NDA in progress with Michael Hart. Executive meeting targeted mid-to-end July.
+## BD Pipeline (Current as of Jul 20, 2026)
  
-**Rush** — Most advanced relationship. Patrick has Dr. Garcia's cell; dinner planned. Michael's contacts (report to Garcia) already set up a meeting. Core pain point: inpatient fragmentation.
+**MacNeal (Trinity Health, Berwyn IL)** — Active pilot design. Contact: Chuck Bareis MD (President/CMO). NDA executed. July 28 meeting confirmed with Chuck + CNO Jen. Pre-meeting questions sent covering performance, volume gaps, cohort design, and physical space. Goal: enter a design session by end of meeting. Small group: Mark, Michael, Patrick. BH platform confirmed as pure inpatient psych, not med-psych — lead with core Juliana MedSurg model. Tier 1 PMPM model (cost + 10% buffer) to be ready before the meeting.
  
-**Russ (Aurora-bound CEO)** — Early stage. Physician leadership intro call this week. Next step: internal socialization, then NDA.
+**Franciscan Alliance** — Strong fit confirmed. In a global risk contract with Anthem (~800 high-risk patients) on a PMPM basis. Sees Juliana as the missing inpatient layer. Awaiting NDA signature before follow-up meeting.
  
-**Vanderbilt** — MSA-based contract structure direction set. Contract not yet drafted. Must be resolved before partner conversation advances.
+**Mercy Health (Virginia)** — Meeting secured August 13th with CMO Lynn, regional clinical officer, and a CFO. First meeting with a CFO in the room. Patrick, Michael, and Mark attending. Mark to prepare a concise presentation.
+ 
+**Rush** — Patrick has Dr. Garcia's cell; dinner planned. Michael's contacts already set up a meeting with Garcia's direct reports. Core pain point: inpatient fragmentation. Rush already owns post-acute pathways.
+ 
+**Becker's Healthcare webinar** — Patrick directly connected with Scott Becker. Format: VUMC success story + Juliana as commercialized vehicle. Free assessment CTA at end; attendee list for immediate follow-up. Leah to schedule the call.
+ 
+**Rural Health Transformation Program (RHTP)** — New GTM vector. Juliana is the embedded partner in rural hospital grant submissions, not the applicant. MARTHA grant (Aug 3 deadline, Tennessee) is best fit. Health Tech Fund (Jul 27) secondary. Key targets: West Tennessee Healthcare, Jackson/Madison County Regional (Les's relationships), Phoebe Health (GA), Franciscan Indiana and Powers (IN), OhioHealth via Carrie Muller/Frank (OH).
+ 
+**Vanderbilt** — MSA-based contract structure direction set. Aug 1 analytics deliverable in motion. Juliana takes over VICP fully in yr 1–2. Contract not yet drafted.
+ 
+**Evidently (potential toolkit partner)** — Demo held Jul 13. Internal debrief and Vanderbilt pilot exploration (Dr. Dara Mais / Neil Patel) still pending. Decision tied to end-of-July meeting.
+ 
+---
  
 ## Key Team
  
-- Patrick Sorrentino — CEO/Co-Founder. Former Market President VillageMD, former CEO Chicago Health System Tenet.
-- Michael McCann MD MBA — Founding Director Clinical Model, Medical Director VICP, Asst Prof Clinical Medicine VUMC.
-- Les Wilkinson JD — Strategic Advisor, COO Hashed Health.
-- Mark Montoney MD MBA — Senior Clinical Advisor, former CMO Wellvana/Contessa/Tenet.
-- Lynn Simon — Clinical Advisor (confirmed June 2026).
-- Frank Coliano — Advisor. ACO/VBC background, prior work with Patrick at Vanguard Chicago.
-- Zach Topper — Financial Advisor (light engagement in progress).
+- **Patrick Sorrentino** — CEO/Co-Founder. Former Market President VillageMD, former CEO Chicago Health System Tenet.
+- **Michael McCann MD MBA** — Founding Director Clinical Model, Medical Director VICP, Asst Prof Clinical Medicine VUMC.
+- **Les Wilkinson JD** — Strategic Advisor, COO Hashed Health.
+- **Mark Montoney MD MBA** — Senior Clinical Advisor, former CMO Wellvana/Contessa/Tenet.
+- **Lynn Simon** — Clinical Advisor (confirmed Jun 2026). Short-term: introductions and relationship calls.
+- **Frank Coliano** — Advisor. ACO/VBC background, prior work with Patrick at Vanguard Chicago.
+- **Zach Topper** — Financial Advisor (light engagement).
+- **Rob Moskowitz** — Advisor (confirmed Jul 13). Former president/CMO of Contessa. Confidential for now (Optum payout pending, non-compete in place). Meeting Patrick weekly (Thursdays). Full-time availability expected mid-October.
+---
+ 
 ## Open Blockers
  
-- Tiered PMPM not yet pressure-tested with full team — no commercial language locked until this resolves
-- MacNeal BH unit confirmed as pure psych — clinical configuration for MacNeal 2.0 TBD ahead of July 28 meeting
-- TAM numerator: Michael eligible patient count reconciliation (2,200 vs 3,700 vs 4,333) still unresolved
-- Vanderbilt contract not yet drafted
+- Tier 1 PMPM model for MacNeal not yet built — Shadi, due before Jul 28
+- Davis enterprise model refactor pending — 1–2 weeks
+- RHTP tracker not yet built — Leah + Shadi, due before Jul 20 Monday call
+- Virginia RHTP filing deadline not yet confirmed — Shadi
+- Playbook edits from Jun 24 and Jul 2 syncs not yet executed in document
 - Data feed design session not yet scheduled
-- Vanderbilt data packaging with Emily pending ~1,000-patient sample
+- Franciscan Alliance awaiting NDA signature before follow-up meeting
+- Evidently internal debrief and decision still pending; Vanderbilt pilot exploration (Dara Mais / Neil Patel) not yet started
+- Vanderbilt analytics access/deliverable: Aug 1 target
+- Vanderbilt contract not yet drafted
+- Juliana webinar — formal Vanderbilt permission still needed
+- Segment-specific one-pagers (ACO vs. health system, CMO vs. CFO) not yet drafted
+- Confirm Aug 1 analytics deliverable with Mia's team — Patrick
  
-
-
 
 
 
