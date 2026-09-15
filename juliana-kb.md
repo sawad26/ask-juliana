@@ -1,9 +1,10 @@
 # Juliana Knowledge Base
-*Last updated: Aug 31, 2026*
+*Last updated: Sep 15, 2026 — from Sep 8 Les 1:1, Sep 8 Davis Quick Sync, Sep 8 Juliana Weekly, Sep 9 Michael & Shadi Touchbase, and Gmail (Sep 6–12)*
 
 ---
 
 ## What Is Juliana
+
 Juliana is an embedded care delivery model that deploys a multidisciplinary pod inside hospitals to manage polychronic, high-utilizer inpatients. It is built on the VICP (Vanderbilt Interdisciplinary Care Program) and is not a SaaS product. It is a B2B clinical operating model sold as a service to health systems.
 
 Positioning: partner, not vendor. The pod operates inside the hospital but is directed by Juliana. The health system provides the unit; Juliana provides the operating model, the operator, and the governance structure.
@@ -11,10 +12,11 @@ Positioning: partner, not vendor. The pod operates inside the hospital but is di
 ---
 
 ## The Clinical Model
+
 The pod is deployed inside a hospital on a dedicated unit. It is non-negotiable on Day 1 — all roles must be present at launch.
 
-**Juliana standard pod (Michael-approved):**
-- Physician (one designated as local site medical director with administrative responsibilities)
+**Juliana standard pod (Michael-approved, all new sites):**
+- Physician (one designated as local site medical director)
 - Advanced practice provider (NP or PA)
 - Pharmacist
 - Behavioral health / psych (PMH-APRN)
@@ -25,7 +27,7 @@ The pod is deployed inside a hospital on a dedicated unit. It is non-negotiable 
 - Clinical Implementation Director (Juliana-employed)
 - Program Manager (Juliana-employed)
 
-Note: The VICP pod at Vanderbilt is the proof-of-concept model. The Juliana standard pod above is the generalized deployment structure for new sites. Role mix at any given site may vary; this list is the canonical starting point.
+Note: The VICP pod at Vanderbilt is the proof-of-concept model only — not the deployment template. Role mix at any given site may vary; this list is the canonical starting point for new sites.
 
 Operating structure:
 - Shared workroom on patient unit (Command Center)
@@ -34,181 +36,248 @@ Operating structure:
 - A team: 10–12 patients, handles admissions
 - B team: 6–8 patients, afternoon clinic
 - Night float covers after 7pm; nocturnist follows care plan; 7am huddle handoff
-
-**Pod characteristics (from Aug 25 playbook session):** Systems thinkers, problem solvers, efficient operators, advanced communicators. "Flight surgeon" mindset — high achievers who problem-solve independently, use consults for interventions only, comfortable operating above their level of training, interprofessional team players.
-
----
-
-## Governance Model (agreed Aug 25)
-Three-tier joint governance structure (Deb Sasmal's framing, from ACO/embedded care management experience):
-
-1. **Working group:** Self-arbitrates day-to-day clinical decisions; no external arbitrator needed
-2. **Clinical steering committee:** Joint Juliana + health system reps; reviews outcomes, outlier cases, and operational friction; weekly or biweekly cadence. Composition: finance (both sides), clinical program lead, VBC/ACO contracting lead
-3. **Executive committee:** CFOs + contracting leads; monthly; reviews results, maintains transparency
-
-Juliana positioned as a partner, not a vendor — joint governance reinforces that from Day 1. Data transparency follows daily/weekly/monthly cadences depending on metric type.
-
-Escalation: operator manages individual performance within pod. Juliana retains the right to remove team members (to be written into health system contract). If the health system cannot backfill, Juliana will source the replacement (non-preferred but viable).
-
-Open question: if Juliana fills a clinical role the health system can't staff, how does accountability and escalation change? Tabled — revisit with Michael and Patrick.
+- Team is the continuity vehicle, not individual providers
 
 ---
 
 ## Patient Cohort
+
 Standard cohort criteria (starting point, not a mandate — health systems can modify):
 - HCC 2–2.999 + 2 or more unscheduled admissions per year, OR
 - HCC 3+ + 1 or more unscheduled admission per year
 - Minimum 60 patients at go-live
-- For MacNeal specifically: 3+ chronic medical conditions paired with utilization history at MacNeal
-
-ED frequent utilizers: include only if they have an admission history. 30 ED visits with zero admissions = exclude.
 
 Exclusion criteria are site-specific. The VICP exclusion list is Vanderbilt-infrastructure-specific and does not automatically apply elsewhere. Behavioral health diagnoses including schizophrenia and substance abuse are NOT categorically excluded. Evaluate specialty service coverage at each new site before applying any exclusions.
+
+Two enrollment pathways: monthly team referral review + proactive SW screening of admitted patients.
 
 ---
 
 ## Proven Outcomes (VICP)
-**Published outcomes:**
+
+### Published / External-Safe Figures
 - 21% reduction in length of stay
 - 23% reduction in recurrent admissions
 - 6,300+ bed-days recovered
 - 900 patients enrolled
 
-**Updated internal program metrics (full VICP dataset, ~2,500 patients — internal only, NOT for external use; cohorted analysis still pending):**
+### Per Michael's Sep 9 Suggestions (Michael & Shadi Touchbase)
+
+**Unadjusted LOS:** 0.83-day reduction (no crossing of confidence intervals). Sourced from Epic Slicer Dicer; in forthcoming manuscript. Michael suggests using this for bed-day calculations — NOT the dashboard RLOS, which carries an unexplainable hospital-applied cofactor that cannot be unadjusted. Davis does not distinguish between the two; Michael is the sole authority on LOS methodology.
+
+**Hazard ratio for recurrent hospitalizations:** 0.77 (post-enrollment VICP population, adjusted).
+
+**Hospitalization volume for calculations:** Two options: (1) EBM benchmark — 3.29 total hospitalizations × 0.77 hazard ratio; (2) actual admission numbers from Davis's operational metrics PowerPoint. Michael prefers whole population since program inception.
+
+**Bed-day formula per Michael:** 3.29 admissions × 6.66 avg LOS × 18% LOS reduction = bed days saved per patient per year. 18% replaces prior 20%.
+
+**Hospitalization framing for external use:** Michael's peer-reviewed manuscript (now accepted) shows 23% improvement vs. expected baseline — without VICP, hospitalizations would be ~40% higher. Two options on any external doc: (1) cite the 23% peer-reviewed figure, or (2) drop the metric entirely. A one-pager is too tight to explain without the benchmark context.
+
+**Total cost of care:** Confirmed unreliable for external use. VUMC's total cost figure is billed charges (Epic-based), not payer collections. Excluded from all external documents.
+
+**External language standard:** "patients cared for on the VICP unit" — not "VICP enrollees." ~80% of unit patients are enrollees; the distinction is conservative by ~20%.
+
+### Internal Metrics (NOT for external use — full dataset ~2,500 patients)
 - 20% decrease in admissions vs. expected baseline
 - 65% drop in ED visits post-enrollment
 - ~40% decrease in 7-day readmission rate (26.5% to 11%)
 - Significant LOS reduction
 - 30% drop in total cost of care per patient
-- Deceased patients excluded from dataset; numbers confirmed not artificially inflated
+- Deceased patients excluded; numbers confirmed not artificially inflated
 - 12-month numbers stronger than 36-month (expected for elderly, high-acuity population)
-- MA-specific figures hold same performance pattern
 
-**Metrics confirmed for external use (Aug 25 data review):** ~20% LOS reduction (7 to 6 days average), 30-day readmissions going down, 7-day readmissions going down, days to next readmission. ED visits reduction present but nuanced for FFS hospitals (packed ED = revenue for them; relevant mainly for risk-bearing or MA-heavy orgs). Raw admissions technically rise (sicker population enrolling); best evidence on admissions reduction remains Michael's manuscript, not the dashboard.
+### DRG-Risk Value Stream (CFO-ready for FFS hospitals)
+Medicare pays a fixed amount per DRG. If a hospital's average LOS for a DRG exceeds the Medicare benchmark, they lose money per case. Plan: pull top 20 DRGs for VICP cohort, identify DRGs where LOS exceeds benchmark, cross-reference with VICP's LOS impact = direct, bottom-line FFS savings attributable to VICP. Davis and Derrick Anderson's team working on this.
 
-**TCC definition note:** VUMC dashboard = hospital technical + professional cost to deliver care. Standard VBC/Medicare definition = all-setting claims expense paid by payer. These are different numbers. "Total cost of care fixed" in the dashboard likely refers to hospital-side costs, not payer claims expense. Story changes depending on whether you're talking to a hospital CFO or a health plan.
-
-**DRG-risk value stream (new, CFO-ready for FFS hospitals):** Medicare pays a fixed amount per DRG. If VUMC's average LOS for a DRG exceeds the Medicare benchmark, they lose money on every case. Plan: pull top 20 DRGs for VICP cohort, identify DRGs where VUMC is over benchmark, cross-reference with VICP's LOS impact. Result: direct, bottom-line FFS savings attributable to VICP. Patrick and Deb confirmed this framing works for skeptical CFOs.
-
-Cohorted analysis (enrolled vs. eligible-but-unenrolled) still pending — needed to fully validate admission reduction claim.
-
-**Manuscript:** submitted to Management in Health Care June 26; includes pre-dashboard outcome data.
+### Cohorted Analysis
+Enrolled vs. eligible-but-unenrolled analysis still pending. Needed to fully validate admission reduction claim. Pursuing via CJ Stimpson's analytics org at VUMC.
 
 ---
 
-## Pricing Model (Current Working Version)
-The flat $450 PMPM and $150/$400 enrolled/active split are both retired. The current working model uses three staffing tiers based on how much clinical staff the hospital provides versus Juliana.
+## Commercial Model
 
-**Tier structure (confirmed):**
-- **Tier 1:** Juliana provides Program Manager + Analyst only (MacNeal approach). No net-new clinical FTEs.
-- **Tier 2:** Adds Social Worker + Case Manager (Juliana-employed). No credentialing concerns for any Tier 1 or Tier 2 roles as currently defined.
-- **Tier 3:** Juliana provides everything except physician + APRN (~40% of total annual pod cost); proposed shared savings split 75/25 (hospital/Juliana)
+### Standard Structure (all non-MacNeal clients)
+- Two-tier PMPM: enrolled rate (FTE cost + thin margin) + ~20% activation step-up when patient has active care plan
+- Plus 25% of validated savings above baseline
+- 90-day ramp option available
+- Shared savings split: 75/25 (hospital/Juliana) for all fee-bearing clients
 
-Note: Pharmacist is NOT in Tier 2. PMH-APRN is NOT included in any tier — it is a clinical role outside the tiered staffing model. Staffing is fixed to unit capacity from Day 1, not patient volume. Bed count is the limiting constraint. ICP going forward: clients who can supply their own physician and APP.
+### MacNeal Exception (50/50 IFV split, fully deferred fees)
+- MacNeal provides all clinical resources; Juliana provides PM + Analyst + IP + operating model
+- 100% of fees at risk (deferred); 50/50 split on Incremental Financial Value
+- Five contractually confirmed value streams: total cost of care, LOS, readmissions, ED visits, falls/HAIs, site-specific payer contract bonus pools
+- 36-month term; LOI non-binding
 
-**Clinical Implementation Director:** corporate cost, NOT in PMPM.
+### PMPM Trigger
+$400 PMPM = first Juliana provider clinical note (consult or H&P). Active status persists once care plan is built.
 
-**Tier 1 PMPM formula (confirmed Jul 24):** Annual fully loaded cost of PM + Analyst (salary + 30% benefits) / 1,000 enrolled patients / 12 months × 1.15 overhead/margin multiplier. Actual PMPM pending Shadi's calculation using Davis salary data. Patrick used $35–38 as an illustrative example — not a confirmed output.
+### Physician Lease Mechanism
+Retired entirely. Do not reference or suggest this structure.
 
-**Standard two-tier PMPM (confirmed Aug 19, for all future clients):**
-- Enrolled rate: covers FTE cost + thin margin; triggered when patient added to cohort
-- Activation rate: ~20% step-up above enrolled rate; triggered when patient has active care plan and is being managed
-- Active PMPM trigger: first Juliana clinical note. Status persists once care plan built, regardless of readmission gap.
+### Three-Tier FTE Staffing Scenarios
+- **Tier 1:** Juliana employs PM + Analyst; hospital provides physician, APP, SW, CM (MacNeal model)
+- **Tier 2:** Juliana employs PM + Analyst + SW + CM; hospital provides physician and APP
+- **Tier 3:** Juliana employs everything except physician + APRN (~40% of pod cost); proposed 75/25 shared savings split
 
-**MacNeal-specific payment structure (LOI, Aug 23):** 50/50 split on Incremental Financial Value; MacNeal provides all clinical resources; Juliana provides non-clinical infrastructure + IP; 100% fees at risk; 36-month term proposed; non-binding.
+Notes: PMH-APRN is NOT in any tier (clinical role). Pharmacist is NOT in Tier 2. Staffing is fixed to unit capacity from Day 1, not patient volume. Bed count is the limiting constraint. ICP focus: clients who can supply their own physician and APP.
 
-**Franciscan-type approach:** charge from day one with 90-day ramp.
+### Commercial Language Blocker
+Do NOT finalize PMPM language in the playbook or investor materials until Patrick's CFO no-risk model notes are received. This is an active blocker.
 
-**PMPM principle:** PMPM is a cost pass-through with operational buffer, not a profit mechanism. Margin comes from shared savings.
+---
 
-Davis rebuilding full enterprise pro forma. Three scenarios × three client sizes = nine synthetic engagements.
+## Governance Model (agreed Aug 25, 2026)
+
+Three tiers:
+1. **Working group** — day-to-day clinical self-arbitration
+2. **Clinical steering committee** — joint Juliana + health system; outcomes, outlier cases, operational friction; weekly or biweekly; finance (both sides) + clinical program lead + VBC contracting lead
+3. **Executive committee** — CFOs + contracting leads; monthly; results review + transparency
+
+Open question (tabled for Michael + Patrick): if Juliana fills a clinical role the health system can't staff, how does accountability/escalation change?
+
+---
+
+## Repeatable Engagement Workflow
+
+10 phases:
+- Phase 0: NDA
+- Phase 1: Engagement Call + Cohort Agreed
+- Phase 2A: Stage 1 Data Request
+- Phase 2B: Stage 1 Analysis
+- Phase 3: Cohort Selection Gate
+- Phase 4A: Stage 2 Data Request (DUA fully executed gate)
+- Phase 4B: Stage 2 Analysis
+- Phase 5: Baseline Lock
+- Phase 6: Pilot Launch
+- Phase 7: Post-Launch Review (30/60/90-day)
+
+Document architecture: Workflow = process map only. Data Request Template = inputs. Internal Analysis Guide = method. Client-facing memo/heatmap = output.
 
 ---
 
 ## Market Size
-Top-down TAM: approximately $10.2B ($400 PMPM × 12 × ~2.13M eligible patients across 688 qualifying US acute care hospitals with 300+ staffed beds).
 
-Bottom-up TAM (revised methodology, Jun 25):
-- Customer unit = hospital
-- 1,000-patient cohort per deployment; 1 cohort per 300 staffed beds
-- Hospital brings own clinical FTEs; Juliana supplies 2 embedded FTEs
-- PMPM = annualized cost of those 2 FTEs ÷ 1,000 patients
-- Shared savings layer: approximately $7.2M per facility per year ($30K cost reduction × 1,000 patients × 25% Juliana share)
-- Shared savings TAM: approximately $7B across ~1,000 qualifying facilities
+**TAM:** ~$10.2B (VUMC ratio 6.92 eligible pts/staffed bed × 307,611 beds across 687 qualifying hospitals × $400 PMPM × 12). Unresolved numerator discrepancy (Michael cited 2,200 vs. Davis 3,700 vs. model's 4,333) — TAM range $7.8B–$11.5B until confirmed. Shared savings and $150 enrolled PMPM excluded from headline.
 
-Note: shared savings figures based on a 120-patient sample — directional, not yet statistically robust. TAM range $7.8B–$11.5B until Michael/Davis eligible patient discrepancy (2,200 vs. 3,700) is resolved. SAM development paused pending Patrick + Les input.
+**SAM:** Development paused pending Les and Patrick input on three open questions: (1) does Juliana target hospitals directly or health system relationships? (2) do early commercial conversations validate/invalidate ICP filters? (3) should near-term geography shrink SAM to regional deployable universe?
 
-**SOM:** 1-2-4-7-11 client ramp; ~$7M yr1 / ~$78M yr5 PMPM only.
+**SOM:** 1-2-4-7-11 client ramp, ~$7M yr1 / ~$78M yr5 PMPM only.
 
 ---
 
-## BD Pipeline (Current as of Aug 31, 2026)
+## BD Pipeline (Current as of Sep 15, 2026)
 
-**MacNeal (Trinity Health, Berwyn IL)** — LOI sent Aug 24; in-person meeting with Chuck Aug 26 (Patrick). LOI terms: 50/50 split on Incremental Financial Value (capacity created, avoidable utilization, readmissions, VBC performance, other mutually agreed financial benefits); MacNeal provides all clinical resources; Juliana provides non-clinical infrastructure + IP; 100% fees at risk; 36-month term; non-binding. Cohort list (7–10 from Chuck) still pending. Conflict flag: Endeavor Health (MacNeal's parent) co-led Lumeris's April 2024 $100M equity raise — Patrick should ask Chuck about the Endeavor–Lumeris relationship before deepening the Lumeris engagement.
+**MacNeal (Trinity Health, Berwyn IL)** — LOI sent Aug 24; in-person with Chuck Aug 26. Sep 11 update: Patrick sent directional capacity assessment to Charles Bareis (chuck, trinity-health.org) — LOS/capacity only, 500-patient cohort, Phase 1 framing. Based on public Medicare/cost report data + Vanderbilt results. Phase 2 will layer quality incentives, contracts, TCC. Shared internally Sep 12; Les and Mark responded positively. Chuck's response still pending. Cohort list (7–10 from Chuck) still pending. Conflict flag: Endeavor Health (MacNeal parent) co-led Lumeris's April 2024 $100M equity raise — Patrick to ask Chuck about the Endeavor–Lumeris relationship.
 
-**Franciscan Alliance** — September 2 meeting booked. 13 hospitals, partnership structured through Millennium Physicians (large physician group with VBC contracts + VBC enabler). Strategy: plug Juliana into Millennium, start with a few Franciscan hospitals, then scale. Evolent (not Lumeris) confirmed as Franciscan partner. NDA not yet returned.
+**Franciscan Alliance** — Confirmed Sep 21, 3–4 PM ET with Michael Englehart and Brandy Bukowski. Deb and Michael both on the call. Previously last-minute canceled; now rescheduled. Lumeris co-pitch being explored (Patrick has deep relationship with Rick). NDA status not confirmed resolved — confirm before meeting. 13 hospitals via Millennium Physicians/Evolent is the opportunity.
 
-**Mercy Health (Virginia)** — Call held Aug 13 (CMO Lynn, regional clinical officer, CFO; 30 min; Patrick, Michael, Mark). CFO candid about LOS challenges; VBC lead pushed back (expected objection). Follow-up in 1–1.5 weeks if no inbound.
+**Vanderbilt (VUMC)** — MSA signed Jul 24. Engagement framework ~95% complete (Olivia signed off). Preferred structure: Juliana manages entire expanded unit (~1,000 patients, phased ~200/month). Unit currently at capacity (24 patients for 16 beds); referrals temporarily shut down. Associate chief of staff independently raising expansion with adult hospital CEO. Davis and Olivia pursuing meetings with adult hospital CEO, Warren Sandberg (Chief of Staff), and chief of staff. Warren Sandberg alignment still needed before C-suite return. DRG risk analysis in progress (Davis/Derrick Anderson). Deb drafting 1–2 pager for C-suite. Contract undrafted. Hospital Medicine becoming its own division July 1, 2027.
 
-**Rush** — Patrick has Dr. Garcia's cell; dinner planned. Michael's contacts set up a meeting with Garcia's direct reports. Core pain point: inpatient fragmentation. Rush already owns post-acute pathways.
+**Mercy Health Virginia** — Call held Aug 13; CFO in room. Follow-up window closed ~Aug 27; status needs confirming.
 
-**Lumeris** — Meeting scheduled Thursday (Aug 28). VBC enabler, well-funded, Endeavor Health (large Chicago health system) as investor. Strategy: partner with VBC enablers to reach hundreds of health systems vs. individual hospital doors. See MacNeal conflict flag above.
+**Rush** — Patrick has Garcia's cell; dinner planned. No meeting yet. Lead, not yet active pipeline.
 
-**LEK Group** — Potential channel partner flagged by Lynn Simon. LEK is a management consulting firm working with health system executives; capacity and LOS are top client concerns — exact fit for Juliana positioning. Lynn sent outreach note; awaiting response.
+**Lumeris** — Meeting held Aug 28. VBC enabler, Evolent investor; channel partner opportunity. Same Endeavor Health investor as MacNeal — flag before deepening.
 
-**Becker's Healthcare webinar** — Patrick connected with Scott Becker. Format: VUMC success story + Juliana as commercialized vehicle. Free assessment CTA at end; attendee list for follow-up. Becker's fall booth: Les accepted.
+**LEK Group** — Patrick met solo Sep 2 night. Outcome not yet reported back.
 
-**Rural Health Transformation Program (RHTP)** — Active GTM vector. PYA consulting firm engaged as rural health funding partner. Juliana as embedded operating partner in rural hospital grant submissions. MARTHA grant (Aug 3, TN) top priority. Key targets: West Tennessee Healthcare, Jackson/Madison County Regional, Phoebe Health (GA), Franciscan Indiana and Powers (IN), OhioHealth (OH).
+**UCSF / Amy Liu** — Chief Quality Officer; was on vacation; waiting for return and reply. Virtual call being scheduled. Michael to loop in Shadi when conversation advances.
 
-**BayCare** — Brandon May (CEO) exchanged messages; meeting being set up.
+**Angelo Pirrozi (BDO partner) / NYP** — Patrick had lunch Sep 8 Palm Beach. Thursday deck walk-through confirmed. Ready to tee up to NYP and potentially others.
 
-**Powers Health** — Good call with CEO; dinner with CMO in progress.
+**Sandbox / Jeff Carrol** — Meeting confirmed Sep 11. Les intro. Leah to update team.
 
-**Paul Butler (Spartanburg Regional, SVP VBC)** — Frank Coliano referral; Patrick has cell and email.
+**AdvisoryTrust (Jeff and Merle)** — Merle met Dave Rayford (retired VUMC chief of staff) for intros to Cookville Regional and Murray. Lunch scheduled September 20. ~20 health system pipeline. Equity vs. rev-share counter still pending.
 
-**Carrie Mueller (OhioHealth)** — Frank Coliano referral; Patrick connected on LinkedIn.
+**Advocate Health** — NDA not yet signed; Patrick assessing value vs. time.
 
-**Blue Venture Fund** (BCBS-affiliated LP network) — Expressed interest after Les shared the customer deck. Les framing as relationship-building, not a formal investor pitch.
+**BayCare, Powers Health, Paul Butler (Spartanburg Regional), Carrie Mueller (OhioHealth)** — Still in pipeline.
 
-**Advisor Trust** (Jeff Pat and Merle Glasgow, PYA spinoff) — Access to ~15 health systems; they open doors, Patrick closes. Targets include Tampa General, Covenant Health, Ballad Health, Maury Regional, West Tennessee Healthcare, Sarasota Memorial. Terms still being negotiated (Les pushing rev share over equity). Leah to manage once agreement signed.
+**Blue Venture Fund** (BCBS-affiliated LP network) — Expressed interest; relationship-building, not a formal investor pitch.
 
-**Vanderbilt** — MSA signed Jul 24. VICP data anomaly resolved Aug 18. Engagement framework discussion held Aug 24. Deb Sasmal drafting 1–2 pager for C-suite (syncing with Davis; target this week; Davis/Olivia review by Sep 1). Preferred structure confirmed: Juliana manages entire expanded unit (~1,000 patients, phased at ~200/month). Two population options for C-suite: Option A (MA-first, fill with medical complexity) or Option B (CMS/medical complexity-first, fill with MA). Current VICP pool ~225 MA patients. Liska (adult hospital CEO) largely on board; Warren Sandberg (Chief of Staff) still needs alignment. Michael cleared to advocate but cannot be part of contracting decision (COI). DRG-risk value stream identified: Davis pulling top 20 DRGs for VICP cohort to identify where LOS exceeds Medicare benchmark = direct FFS savings per case attributable to VICP. Davis compliance memo (VUMC privacy, legal, risk sign-offs) to be shared with Deb before both documents go to C-suite. Hospital Medicine at Vanderbilt becoming its own division July 1, 2027 — standalone governance, budget, FTE; strategic opportunity for Juliana governance within VUMC. Contract still undrafted.
+---
 
-**Evidently (potential toolkit partner)** — Demo held Jul 13. Internal debrief and Vanderbilt pilot exploration (Dr. Dara Mais / Neil Patel) still pending.
+## Investor-Facing Positioning
+
+**Pro forma scope (strategy set Sep 2, 2026):** ONE investor-facing version, anchored only to LOS + readmission data. Lead with bed days saved. National LOS benchmarks, conservative 1-day reduction assumption. Falls, HAIs, VBC/MSSP/TCC held as Tier 2 placeholders until Juliana has its own outcome data. Shared savings 75/25 standard (Juliana/hospital); MacNeal 50/50 confirmed exception. Do NOT finalize commercial language until Patrick's CFO no-risk notes received.
+
+**PitchBook profile** — Jebesty Selvaraj (analyst) responded Sep 10 with template constraints. Next pass with Leah. Nothing submitted until reviewed with Patrick.
+
+**TAM/SAM/SOM:** See Market Size section. SAM paused. Do not use investor-facing until Les/Patrick input received.
 
 ---
 
 ## Key Team
-- **Patrick Sorrentino** — CEO/Co-Founder. Former Market President VillageMD, former CEO Chicago Health System Tenet. Owns BD, commercial model, contracts.
-- **Michael McCann MD MBA** — Founding Director Clinical Model, Medical Director VICP, Asst Prof Clinical Medicine VUMC. Owns clinical protocols and playbook sections.
-- **Les Wilkinson JD** — Strategic Advisor, COO Hashed Health (Shadi's manager). Drafted MacNeal LOI (Aug 23).
-- **Mark Montoney MD MBA** — Senior Clinical Advisor, former CMO Wellvana/Contessa/Tenet.
-- **Lynn Simon** — Clinical Advisor (confirmed Jun 2026). Short-term: introductions and relationship calls. Flagged LEK Group as channel partner.
-- **Frank Coliano** — Advisor. ACO/VBC background, prior work with Patrick at Vanguard Chicago.
-- **Zach Topper** — Financial Advisor (light engagement in progress).
-- **Rob Moskowitz** — Advisor, former president/CMO of Contessa. Meeting with Patrick weekly (Thursdays).
-- **Deb Sasmal** — VP Product, Hashed Health (joined Aug 17, 2026). 7 years at UPMC Enterprises (VC + commercialization). Background: investment strategy, enterprise implementation, deal structuring. Now owns VUMC engagement summary 2-pager and playbook governance section.
-- **Tommy Gallon** — Marketing/PR Advisor (starting next week, agreement finalized). Former news anchor; currently at CHS.
-- **Davis Rand** — Financial modeling, pro forma, VUMC analytics. Owns DRG risk analysis and Enterprise Analytics relationship.
-- **Leah Callahan** — BD pipeline, outreach, conference presence.
+
+- Patrick Sorrentino — CEO/Co-Founder. Former Market President VillageMD, former CEO Chicago Health System Tenet.
+- Michael McCann MD MBA — Founding Director Clinical Model, Medical Director VICP, Asst Prof Clinical Medicine VUMC.
+- Les Wilkinson JD — Strategic Advisor, COO Hashed Health.
+- Mark Montoney MD MBA — Senior Clinical Advisor, former CMO Wellvana/Contessa/Tenet.
+- Deb Sasmal — VP Product, Hashed Health (joined Aug 17, 2026). 7 years at UPMC Enterprises. Background: investment strategy, enterprise implementation, deal structuring.
+- Davis Rand — VUMC analytics and financial modeling lead. Out until ~Sep 20.
+- Olivia C. Bryant — Enterprise analytics, VUMC.
+- Leah Callahan — BD/marketing and pipeline outreach.
+- Tommy Gallon — PR/Media Advisor. Agreement finalized.
+- Lynn Simon — Clinical Advisor.
+- Rob Moskowitz — Advisor, former president/CMO of Contessa. Meeting with Patrick weekly (Thursdays).
+- Frank Coliano — Advisor. ACO/VBC background.
+- Shadi Awad — Venture Architect, Hashed Health. Owns investor infrastructure, implementation playbook, data strategy, tracker/SOP operations.
 
 ---
 
-## Open Blockers (as of Aug 31, 2026)
-- **Pro forma rework** — Shadi; three-tier FTE + two-tier PMPM structure; direction clearer from Aug 24/25 meetings; target this week
-- **MacNeal cohort list** — still pending from Chuck
-- **Franciscan NDA** — not yet returned
+## Implementation Playbook Status
+
+Final v2: 7 Parts, 18 sections, 13 appendices. Internal only.
+
+- Locked: Section 1.1
+- Drafted: 2.1–2.3, 3.1–3.3, 4.1–4.4, 5.1–5.2, 5.6, 6.1–6.3
+- Pending Michael: 5.3, 5.4, 5.5, 5.2 activation confirm, family refusal protocol
+- Pending Patrick + Michael: 6.4
+- Pending Patrick: ICP criteria, operator JD, re-benchmarking protection, Appendices H+I
+- Pending demos: 6.1 + App K
+- Jun 24 + Jul 2 edits still not executed in document
+- Three-tier governance model agreed Aug 25; Deb writing section
+
+---
+
+## Open Blockers (Sep 15, 2026)
+
+- **Commercial language** — Do not lock pricing language until Patrick's CFO no-risk notes received. Active blocker, no movement
+- **VICP outcomes one-pager** — per Michael's Sep 9 suggestions: unadjusted LOS 0.83 days, hazard ratio 0.77, 18% LOS for bed-day calc, 23% vs. baseline or drop hospitalization framing. Sent to Michael EOD Sep 9; confirm receipt. Michael out next week
+- **Follow up with Davis on hospitalization admission numbers** — needed for bed-day calc; Davis out until ~Sep 20
+- **MacNeal cohort list** — pending from Chuck; directional capacity doc sent Sep 11, awaiting response
+- **Franciscan NDA** — status not confirmed; meeting Sep 21 — confirm before that date
+- **Franciscan prep** — Sep 21 3–4 PM ET with Michael Englehart; Deb and Michael on call
+- **PitchBook second pass** — Jebesty template constraints noted; Leah + Shadi next pass before submission
+- **Pro forma rebuild** — blocked on commercial language AND Davis cohorted analysis
+- **Playbook edits** — Jun 24 + Jul 2 edits unexecuted; governance section pending Deb
+- **Warren Sandberg alignment** — VUMC Chief of Staff; needed before C-suite return
+- **Cohorted analysis (enrolled vs. eligible-but-unenrolled)** — pursuing CJ Stimpson's org; timeline unclear
+- **DRG risk analysis** — Davis + Derrick Anderson's team; top 20 DRGs for VICP cohort
 - **Shared savings dashboard + methodology** — not locked
-- **Implementation Playbook governance meeting** — DONE Aug 25 (Michael, Patrick, Deb). Three-tier governance model agreed: working group → clinical steering committee → executive committee. Deb writing up section. Remaining open: execute Jun 24 + Jul 2 playbook edits
-- **Vanderbilt engagement summary 2-pager** — Deb Sasmal; syncing with Davis this week; target within 1–2 days
-- **DRG risk analysis** — Davis; meeting Enterprise Analytics Aug 26; pulling VICP cohort MRNs for Derrick Anderson's team
-- **Warren Sandberg (VUMC Chief of Staff) alignment** — still needed before C-suite return
+- **Vanderbilt contract** — undrafted
 - **Vanderbilt business terms + governance outline** — Patrick + Michael for Davis
-- **Vanderbilt contract** — not yet drafted
-- **Juliana webinar** — formal Vanderbilt permission still needed
+- **Juliana webinar** — Vanderbilt permission still needed
 - **HCC coding variables** — Patrick + Chris to identify essential fields for Davis
-- **Advisor Trust equity vs. rev-share counter** — still pending
-- **Commercial language blocker** — Patrick CFO no-risk notes still unresolved; do not lock pricing language in playbook or deck
-- **Cohorted analysis at Vanderbilt** — enrolled vs. eligible-but-unenrolled; needed to fully validate admission reduction claim
+- **AdvisoryTrust equity vs. rev-share counter** — pending
+- **TAM/SAM/SOM** — SAM paused pending Les/Patrick input on three questions
+- **Mission statement** — individual responses still being collected; Shadi consolidates
 - **PMH-APRN credentialing lift for Tier 2** — Patrick to confirm
-- **Free assessment concept** — floated by Patrick; tabled for broader team discussion. Concept: NDA-gated look at cohort data to surface one value stream before full commitment. Risk: could dilute strategic partner positioning vs. consulting firm positioning.
+- **Free assessment concept** — tabled
+- **CFO hire** — fractional/advisory; Les flagged higher priority than CMO at this stage
+
+---
+
+## Key Decisions and Principles
+
+- VICP pod at Vanderbilt is proof-of-concept only — not replicated at other sites. Juliana standard pod is canonical for all new deployments
+- Cohort exclusions are VICP-specific infrastructure rules; evaluate separately at each new site
+- $400 PMPM trigger = first Juliana provider clinical note
+- Night float = nocturnist follows care plan; 7am huddle handoff
+- Shared savings = 5 contractually defined streams agreed before go-live; freed bed-day = site-specific negotiated contribution margin
+- Operator = Day 1, one per site, Juliana-employed. All pod roles non-negotiable Day 1
+- Physician lease mechanism is retired — do not reference
+- Patrick's CFO no-risk model notes must be received before commercial language is finalized anywhere
+- Dashboard RLOS not usable for bed-day math — use Michael's unadjusted figures only
+- TCC excluded from all external use until confirmed reliable
+- External language locked to "patients cared for on the VICP unit"
